@@ -13,7 +13,6 @@ public class Customer {
     private int customerID;
     private String firstName;
     private String lastName;
-    private String userName;
     private String pin;
 
     private Customer(String firstName, String lastName, String pin){
@@ -33,10 +32,6 @@ public class Customer {
 
     public String getLastName() {
         return lastName;
-    }
-
-    public String getUserName() {
-        return userName;
     }
 
     public String getPin() {

@@ -11,9 +11,6 @@ import java.util.ArrayList;
 
 public class CustomerManager {
     private ArrayList<Customer> customers;
-    private int customerIDCounter;
-    private Customer newCustomer;
-
 
     CustomerManager(){
         customers = new ArrayList<Customer>();
