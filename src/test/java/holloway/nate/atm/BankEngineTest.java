@@ -26,7 +26,7 @@ public class BankEngineTest {
     @Test
     public void depositTest(){
         BankEngine manager = new BankEngine();
-        Customer firstCustomer = Customer.createCustomer("Nate","Holloway","9999");
+        Customer firstCustomer = manager.customerManager.createNewCustomer("Nate","Holloway","9999");
         Account firstAccount = manager.createNewAccount(firstCustomer.getCustomerID(), Account.AccountType.SAVINGS,10000);
         Account secondAccount = manager.createNewAccount(firstCustomer.getCustomerID(), Account.AccountType.CHECKING,500);
         boolean isTrue = manager.deposit(firstAccount.getAccountID(),500);
@@ -52,6 +52,19 @@ public class BankEngineTest {
         Account secondAccount = manager.createNewAccount(firstCustomer.getCustomerID(), Account.AccountType.CHECKING,500);
         Account otherCustomerAccount = manager.createNewAccount(secondCustomer.getCustomerID(), Account.AccountType.CHECKING,250000);
         boolean isTrue = manager.transfer(firstAccount,secondAccount,1500);
+        Assert.assertTrue(isTrue);
+    }
+
+    @Test
+    public void authenticateTest(){
+        BankEngine manager = new BankEngine();
+        Customer firstCustomer = Customer.createCustomer("Nate","Holloway","9999");
+        Customer secondCustomer = Customer.createCustomer("Nate","Holloway","9898");
+        Account firstAccount = manager.createNewAccount(firstCustomer.getCustomerID(), Account.AccountType.SAVINGS,10000);
+        Account secondAccount = manager.createNewAccount(firstCustomer.getCustomerID(), Account.AccountType.CHECKING,500);
+        Account otherCustomerAccount = manager.createNewAccount(secondCustomer.getCustomerID(), Account.AccountType.CHECKING,250000);
+
+        boolean isTrue = manager.authenticate(100001,"9999");
         Assert.assertTrue(isTrue);
     }
 }

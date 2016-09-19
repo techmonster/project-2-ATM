@@ -31,7 +31,7 @@ public class Menu {
     }
 
     public static void printEnterAmount(){
-        System.out.println("Enter the amount: ");
+        System.out.println("ENTER THE AMOUNT: ");
     }
 
     public static void printEnterTypeOfAccount(){

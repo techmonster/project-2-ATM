@@ -6,7 +6,8 @@ package holloway.nate.atm;
  */
 public class Account {
 
-    private int accountID = 100;
+    private int accountID;
+    private static int startingID = 100;
     private double accountBalance;
     public enum AccountType{CHECKING, SAVINGS, INVESTMENT}
     private AccountType accountType;
@@ -16,7 +17,7 @@ public class Account {
     private final int customerID;
 
     private Account(int customerID, AccountType type, double amount){
-        accountID = ++accountID;
+        accountID = ++startingID;
         accountType = type;
         accountStatus = AccountStatus.OPEN;
         accountBalance = amount;

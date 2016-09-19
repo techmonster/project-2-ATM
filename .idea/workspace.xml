@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aaf3dff-6ec6-44ed-9931-c6f661b20938" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/BankEngine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Initalizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Menu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Transaction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/TransactionManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/UserInput.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/holloway/nate/atm/AccountManagerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/holloway/nate/atm/BankEngineTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/holloway/nate/atm/TransactionsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/holloway/nate/atm/Atm.class" afterPath="$PROJECT_DIR$/target/classes/holloway/nate/atm/Atm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/holloway/nate/atm/Customer.class" afterPath="$PROJECT_DIR$/target/classes/holloway/nate/atm/Customer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/holloway/nate/atm/CustomerManager.class" afterPath="$PROJECT_DIR$/target/classes/holloway/nate/atm/CustomerManager.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Account.java" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Account.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/AccountManager.java" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/AccountManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Atm.java" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Atm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/CustomerManager.java" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/CustomerManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/BankEngine.java" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/BankEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Menu.java" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Menu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Transaction.java" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Transaction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/TransactionManager.java" afterPath="$PROJECT_DIR$/src/main/java/holloway/nate/atm/TransactionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/holloway/nate/atm/BankEngineTest.java" afterPath="$PROJECT_DIR$/src/test/java/holloway/nate/atm/BankEngineTest.java" />
     </list>
     <ignored path="ATM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,32 +32,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AccountManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/AccountManager.java">
+      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
+            <state relative-caret-position="150">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#852#861#0" expanded="true" />
-                <element signature="e#3208#3209#0" expanded="true" />
-                <element signature="e#3247#3248#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-              <folding>
-                <element signature="e#1098#1099#0" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
-                <element signature="e#1163#1164#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#948#949#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,12 +50,9 @@
       <file leaf-file-name="TransactionManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/TransactionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
-              <folding>
-                <element signature="e#227#228#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="495">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,34 +60,19 @@
       <file leaf-file-name="BankEngine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/BankEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+            <state relative-caret-position="421">
+              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding>
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
-                <element signature="e#941#942#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1397#1398#0" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1074#1075#0" expanded="true" />
                 <element signature="e#1473#1474#0" expanded="true" />
-                <element signature="e#1931#1932#0" expanded="true" />
-                <element signature="e#1987#1988#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInput.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/UserInput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-              <folding>
-                <element signature="e#245#246#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#1549#1550#0" expanded="true" />
+                <element signature="e#2064#2065#0" expanded="true" />
+                <element signature="e#2120#2121#0" expanded="true" />
+                <element signature="e#2749#2750#0" expanded="true" />
+                <element signature="e#2803#2804#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,8 +81,8 @@
       <file leaf-file-name="Atm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Atm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+            <state relative-caret-position="40">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,44 +90,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Initalizer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Initalizer.java">
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+            <state relative-caret-position="285">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#906#907#0" expanded="true" />
-                <element signature="e#950#951#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
+                <element signature="e#984#985#0" expanded="true" />
+                <element signature="e#1018#1019#0" expanded="true" />
+                <element signature="e#1199#1200#0" expanded="true" />
+                <element signature="e#1232#1233#0" expanded="true" />
+                <element signature="e#1534#1535#0" expanded="true" />
+                <element signature="e#1571#1572#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankEngineTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/BankEngineTest.java">
+      <file leaf-file-name="AccountManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/AccountManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+            <state relative-caret-position="1470">
+              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#852#861#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,11 +122,43 @@
       <file leaf-file-name="AccountManagerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/AccountManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
+            <state relative-caret-position="915">
               <caret line="61" column="82" selection-start-line="61" selection-start-column="82" selection-end-line="61" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankEngineTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/BankEngineTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerManagerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/CustomerManagerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/CustomerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -210,18 +185,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Customer.java" />
         <option value="$PROJECT_DIR$/src/test/java/holloway/nate/atm/TransactionsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/TransactionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/CustomerManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/holloway/nate/atm/AccountManagerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Account.java" />
         <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/AccountManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/holloway/nate/atm/BankEngineTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/UserInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Initalizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Menu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/holloway/nate/atm/BankEngineTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/BankEngine.java" />
         <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Atm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/TransactionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/holloway/nate/atm/Transaction.java" />
       </list>
     </option>
   </component>
@@ -244,10 +219,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="33" />
-    <option name="y" value="201" />
-    <option name="width" value="1280" />
-    <option name="height" value="850" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -392,60 +365,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager" selected="Application.Initalizer">
-    <configuration default="false" name="BankEngineTest.depositTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="holloway.nate.atm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ATM" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="holloway.nate.atm" />
-      <option name="MAIN_CLASS_NAME" value="holloway.nate.atm.BankEngineTest" />
-      <option name="METHOD_NAME" value="depositTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BankEngineTest.withdrawalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="holloway.nate.atm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ATM" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="holloway.nate.atm" />
-      <option name="MAIN_CLASS_NAME" value="holloway.nate.atm.BankEngineTest" />
-      <option name="METHOD_NAME" value="withdrawalTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="BankEngineTest.transferTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -516,6 +438,58 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="ATM" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="BankEngineTest.authenticateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="holloway.nate.atm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ATM" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="holloway.nate.atm" />
+      <option name="MAIN_CLASS_NAME" value="holloway.nate.atm.BankEngineTest" />
+      <option name="METHOD_NAME" value="authenticateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CustomerManagerTest.getCustomerByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="holloway.nate.atm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ATM" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="holloway.nate.atm" />
+      <option name="MAIN_CLASS_NAME" value="holloway.nate.atm.CustomerManagerTest" />
+      <option name="METHOD_NAME" value="getCustomerByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -926,24 +900,27 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BankEngineTest.depositTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BankEngineTest.withdrawalTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BankEngineTest.transferTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AccountManagerTest.transferBetweenAccountsAndVerifyNewBalances" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Initalizer" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BankEngineTest.transferTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AccountManagerTest.transferBetweenAccountsAndVerifyNewBalances" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Initalizer" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BankEngineTest.authenticateTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CustomerManagerTest.getCustomerByIdTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Initalizer" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.BankEngineTest.transferTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AccountManagerTest.transferBetweenAccountsAndVerifyNewBalances" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BankEngineTest.withdrawalTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BankEngineTest.depositTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CustomerManagerTest.getCustomerByIdTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BankEngineTest.authenticateTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AccountManagerTest.transferBetweenAccountsAndVerifyNewBalances" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -954,22 +931,24 @@
       <updated>1474169850303</updated>
       <workItem from="1474169853819" duration="22000" />
       <workItem from="1474170304731" duration="54000" />
-      <workItem from="1474170420038" duration="50565000" />
+      <workItem from="1474170420038" duration="68061000" />
     </task>
+    <task id="LOCAL-00001" summary="Monday morning">
+      <created>1474265667791</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1474265667791</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountManagerTest_transferBetweenAccountsAndVerifyNewBalances - 2016.09.18 at 21h 21m 26s.xml">
-      <configuration name="AccountManagerTest.transferBetweenAccountsAndVerifyNewBalances" configurationId="JUnit" />
+    <history-entry file="BankEngineTest_authenticateTest - 2016.09.19 at 11h 42m 35s.xml">
+      <configuration name="BankEngineTest.authenticateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankEngineTest_transferTest - 2016.09.18 at 21h 17m 52s.xml">
-      <configuration name="BankEngineTest.transferTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankEngineTest_transferTest - 2016.09.18 at 21h 18m 24s.xml">
-      <configuration name="BankEngineTest.transferTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankEngineTest_transferTest - 2016.09.18 at 21h 25m 30s.xml">
-      <configuration name="BankEngineTest.transferTest" configurationId="JUnit" />
+    <history-entry file="BankEngineTest_authenticateTest - 2016.09.19 at 11h 57m 03s.xml">
+      <configuration name="BankEngineTest.authenticateTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BankEngineTest_transferTest - 2016.09.18 at 21h 26m 15s.xml">
       <configuration name="BankEngineTest.transferTest" configurationId="JUnit" />
@@ -986,35 +965,41 @@
     <history-entry file="BankEngineTest_transferTest - 2016.09.18 at 22h 11m 06s.xml">
       <configuration name="BankEngineTest.transferTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankEngineTest_withdrawalTest - 2016.09.18 at 21h 16m 01s.xml">
-      <configuration name="BankEngineTest.withdrawalTest" configurationId="JUnit" />
+    <history-entry file="BankEngineTest_transferTest - 2016.09.19 at 13h 36m 43s.xml">
+      <configuration name="BankEngineTest.transferTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankEngineTest_transferTest - 2016.09.19 at 13h 47m 29s.xml">
+      <configuration name="BankEngineTest.transferTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerManagerTest_getCustomerByIdTest - 2016.09.19 at 12h 55m 21s.xml">
+      <configuration name="CustomerManagerTest.getCustomerByIdTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50641000" />
+    <option name="totallyTimeSpent" value="68137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="201" width="1280" height="850" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32720232" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5428937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5411423" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.165625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39690223" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1035,8 +1020,22 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Monday morning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Monday morning" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Atm.java</url>
+          <line>156</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1052,157 +1051,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/AtmTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/CustomerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/TransactionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/CustomerManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/CustomerManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="44" selection-start-line="12" selection-start-column="8" selection-end-line="14" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/TransactionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
-          <folding>
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/AccountManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="61" column="82" selection-start-line="61" selection-start-column="82" selection-end-line="61" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/AccountManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
-          <folding>
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#852#861#0" expanded="true" />
-            <element signature="e#3208#3209#0" expanded="true" />
-            <element signature="e#3247#3248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/BankEngineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/BankEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
-          <folding>
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1397#1398#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#1987#1988#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Initalizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1222,20 +1074,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Atm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Initalizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        <state relative-caret-position="495">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
           <folding>
             <element signature="e#425#426#0" expanded="true" />
             <element signature="e#486#487#0" expanded="true" />
@@ -1247,6 +1108,133 @@
             <element signature="e#906#907#0" expanded="true" />
             <element signature="e#950#951#0" expanded="true" />
             <element signature="e#1006#1007#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/AtmTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/TransactionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/CustomerManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/CustomerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/BankEngineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/holloway/nate/atm/AccountManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="82" selection-start-line="61" selection-start-column="82" selection-end-line="61" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/TransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/BankEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1473#1474#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2749#2750#0" expanded="true" />
+            <element signature="e#2803#2804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Atm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/AccountManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="e#852#861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#1571#1572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/holloway/nate/atm/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -10,12 +10,12 @@ import java.util.Scanner;
 public class Atm {
     BankEngine bankEngine;
     Scanner scanner;
-    int intAnswer ;
     double doubleAnswer;
     String stringAnswer;
     int customerId;
     ArrayList<Account> currentAccounts;
     boolean quit = false;
+    boolean success = false;
 
     public Atm(){
         bankEngine = new BankEngine();
@@ -25,6 +25,7 @@ public class Atm {
     public void start(){
         while(!quit) {
             Menu.printGreetingMenu();
+            int intAnswer ;
             intAnswer = scanner.nextInt();
             switchInitialResponse(intAnswer);
         }
@@ -69,6 +70,7 @@ public class Atm {
 
             if (bankEngine.authenticate(customerId, stringAnswer)) {
                 noSuccess = false;
+                System.out.printf("WELCOME BACK %s %s%n", bankEngine.customerManager.getCustomerById(customerId).getFirstName(), bankEngine.customerManager.getCustomerById(customerId).getLastName());
                 displayOptionMenu();
             } else {
                 Menu.cannotBeAuthenticatedMessage();
@@ -80,7 +82,8 @@ public class Atm {
         displayCurrentAccounts();
         System.out.println();
         Menu.accountOptionMenu();
-        evaluateOptions(scanner.nextInt());
+        int accountOptionAnswer = scanner.nextInt();
+        evaluateOptions(accountOptionAnswer);       //evaluate options method call
     }
     
     public void displayCurrentAccounts(){
@@ -94,76 +97,92 @@ public class Atm {
     public void evaluateOptions(int i) {
         Account one = null;
         Account two = null;
-        Menu.printEnterAmount();
-        double amount = scanner.nextDouble();
+        Account.AccountType thisType;
+        double amount;
+
+
         switch (i) {
-            case 1:
-                Menu.printEnterTypeOfAccount();
-                Account.AccountType thisType = switchType(scanner.nextInt());
-                bankEngine.createNewAccount(customerId,thisType, amount);
-                break;
-            case 2:
+            case 1: //CREATE NEW ACCOUNT
                 Menu.printEnterTypeOfAccount();
                 thisType = switchType(scanner.nextInt());
+                Menu.printEnterAmount();
+                amount = scanner.nextDouble();
+                Account thisAccount = bankEngine.createNewAccount(customerId,thisType, amount);
+                if (thisAccount!=null){
+                    success = true;
+                }
+                bankEngine.createNewTransaction(amount, Transaction.TransactionType.DEPOSIT,success);
+                success = false;
+                break;
+            case 2: //WITHDRAWAL
+                Menu.printEnterTypeOfAccount();
+                thisType = switchType(scanner.nextInt());
+                Menu.printEnterAmount();
                 amount = scanner.nextDouble();
                 for (Account a:currentAccounts) {
                     if (a.getAccountType() == thisType) {
-                        bankEngine.withdrawal(a.getAccountID(), amount);
+                        success = bankEngine.withdrawal(a.getAccountID(), amount);
+                        bankEngine.createNewTransaction(-amount, Transaction.TransactionType.WITHDRAWAL, success);
                         break;
                     }
                 }
                 break;
-            case 3:
+            case 3: //DEPOSIT
                 Menu.printEnterTypeOfAccount();
                 thisType = switchType(scanner.nextInt());
-                scanner.nextDouble();
+                Menu.printEnterAmount();
+                amount = scanner.nextDouble();
                 for (Account a:currentAccounts) {
                     if (a.getAccountType() == thisType) {
-                        bankEngine.deposit(a.getAccountID(), amount);
+                        success = bankEngine.deposit(a.getAccountID(), amount);
                         break;
                     }
                 }
+                bankEngine.createNewTransaction(amount, Transaction.TransactionType.DEPOSIT,success);
                 break;
-            case 4:
+            case 4: //TRANSFER
                 Menu.printEnterTypeOfAccount();
                 thisType = switchType(scanner.nextInt());
+
+                Menu.printEnterTypeOfAccount();
                 Account.AccountType thisType2 = switchType(scanner.nextInt());
+
+                Menu.printEnterAmount();
+                amount = scanner.nextDouble();
+
                 for (Account a:currentAccounts) {
-                if (a.getAccountType() == thisType) {
-                    one = a;
-                    break;
+                    if (a.getAccountType() == thisType) {
+                        one = a;
+                    }
+                    if (a.getAccountType() == thisType2){
+                        two = a;
+                    }
                 }
-                if (a.getAccountType() == thisType2){
-                    two = a;
-                    break;
-                }
-                }
-                bankEngine.transfer(one, two, amount);
+                success = bankEngine.transfer(one, two, amount);
+                bankEngine.createNewTransaction(amount, Transaction.TransactionType.DEPOSIT,success);
+                bankEngine.createNewTransaction(-amount, Transaction.TransactionType.WITHDRAWAL,success);
+
                 break;
-            case 5:
+            case 5: //CHECK BALANCE
                 Menu.printEnterTypeOfAccount();
                 thisType = switchType(scanner.nextInt());
                 for (Account a:currentAccounts) {
                     if (a.getAccountType() == thisType) {
-                        bankEngine.checkBalance(a);
+                        System.out.println(bankEngine.checkBalance(a));
                         break;
                     }
                 }
                 break;
-            case 6:
-                bankEngine.transactionManager.printTransactions();
+            case 6: //PRINT TRANSACTIONS
+                bankEngine.printTransactions();
                 break;
-            case 7:
+            case 7: //CLOSE ACCOUNT
                 Menu.printEnterTypeOfAccount();
                 thisType = switchType(scanner.nextInt());
-                for (Account a:currentAccounts) {
-                    if (a.getAccountType() == thisType) {
-                        bankEngine.accountManager.closeAccount(a.getAccountID());
-                        break;
-                    }
-                }
+                bankEngine.closeAccount(customerId,thisType);
                 break;
-            case 8:
+            case 8: //QUIT
+                quit = true;
                 System.out.println("Have a nice day!");
                 break;
         }

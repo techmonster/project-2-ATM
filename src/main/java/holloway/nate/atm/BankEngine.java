@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Created by nathanielholloway on 9/18/16.
+ * This class is where all of the classes meet.
  */
 public class BankEngine {
 
@@ -25,12 +26,12 @@ public class BankEngine {
         return accountManager.createNewAccount(customerId, type, amount);
     }
 
-    public boolean withdrawal(int id, double amount){
-        return accountManager.withdrawal(id, amount);
+    public boolean withdrawal(int accountId, double amount){
+        return accountManager.withdrawal(accountId, amount);
     }
 
-    public boolean deposit(int id, double amount){
-        return accountManager.deposit(id, amount);
+    public boolean deposit(int accountId, double amount){
+        return accountManager.deposit(accountId, amount);
     }
 
     public boolean transfer( Account account1, Account account2, double amount){
@@ -55,6 +56,7 @@ public class BankEngine {
             }
         }
         catch (Exception e){
+            System.out.println("Can not authenticate.");
             return false;
         }
 
@@ -65,8 +67,28 @@ public class BankEngine {
         return accountManager.getAccountById(id);
     }
 
+    public void closeAccount(int customerID, Account.AccountType type){
+        boolean result = false;
+        ArrayList<Account> thisCustomersAccounts = getCustomerAccounts(customerManager.getCustomerById(customerID));
+        for (Account a:thisCustomersAccounts) {
+            if (type==a.getAccountType())
+            result = accountManager.closeAccount(a.getAccountID());
+            System.out.println(result);
+        }
+    }
+
     public ArrayList<Account> getCustomerAccounts(Customer customer){
         return accountManager.getCustomerAccounts(customer.getCustomerID());
 
     }
+
+    public void printTransactions(){
+        transactionManager.printTransactions();
+    }
+
+    public void createNewTransaction(double amount, Transaction.TransactionType type, boolean success) {
+         transactionManager.createNewTransaction(amount,type,success);
+    }
+
+
 }

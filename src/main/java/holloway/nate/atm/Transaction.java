@@ -4,17 +4,19 @@ import java.util.Date;
 
 /**
  * Created by nathanielholloway on 9/18/16.
+ * This class holds the data for the transactions class.
  */
 public class Transaction {
+    private static int transId = 1;
     private int transactionID;
     private double transactionAmount;
-    public enum TransactionType{WITHDRAWAL, DEPOSIT};
+    public enum TransactionType{WITHDRAWAL, DEPOSIT, };
     private TransactionType transactionType;
     private Date transactionDate;
     private boolean success = false;
 
     private Transaction(double amount, TransactionType type, boolean success){
-        ++transactionID;
+        transactionID = transId++;
         transactionAmount = amount;
         transactionDate = new Date();
         transactionType = type;
