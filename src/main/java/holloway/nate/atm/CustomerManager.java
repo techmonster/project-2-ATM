@@ -26,6 +26,16 @@ public class CustomerManager {
         return null;
     }
 
+    public String findPin(String pin){
+        String success = "Failed to find pin.";
+         for(Customer c: customers){
+            if(c.getPin().equals(pin)){
+                return c.getPin();
+            }
+        }
+        return success;
+    }
+
     public void addCustomer(Customer c){
         customers.add(c);
     }

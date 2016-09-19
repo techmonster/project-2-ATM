@@ -13,17 +13,19 @@ public class Account {
     public enum AccountStatus{OPEN, CLOSED, OFAC}
     private AccountStatus accountStatus;
     private boolean success = false;
+    private final int customerID;
 
-    private Account(AccountType type, double amount){
+    private Account(int customerID, AccountType type, double amount){
         accountID = ++accountID;
         accountType = type;
         accountStatus = AccountStatus.OPEN;
         accountBalance = amount;
+        this.customerID = customerID;
     }
 
 
-    public final static Account createAccount(AccountType type, double amount){
-        return new Account(type, amount);
+    public final static Account createAccount(int customerID, AccountType type, double amount){
+        return new Account(customerID, type, amount);
     }
 
     public AccountType getAccountType() {
@@ -36,18 +38,24 @@ public class Account {
 
     public int getAccountID() {
         return accountID;
-
+    }
+    public int getCustomerID() {
+        return customerID;
     }
 
-    public boolean addToAccountBalance(double amount){
+    public boolean depositToAccount(double amount){
         accountBalance += amount;
+        success = true;
         return success;
     }
-    public boolean withdrawlFromAccountBalance(double amount){
+    public boolean withdrawalFromAccount(double amount){
         accountBalance -= amount;
         return success;
     }
     public double getAccountBalance() {
         return accountBalance;
+    }
+    public void setStatus(AccountStatus status){
+        accountStatus = status;
     }
 }
