@@ -5,6 +5,7 @@ import org.junit.Test;
 
 /**
  * Created by nathanielholloway on 9/18/16.
+ * This class was created to test the AccountManager class.
  */
 public class AccountManagerTest {
 

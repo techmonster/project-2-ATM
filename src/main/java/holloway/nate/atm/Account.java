@@ -4,16 +4,15 @@ package holloway.nate.atm;
  * Created by nathanielholloway on 9/18/16.
  * This class is responsible for holding the Account information.
  */
-public class Account {
+final class Account {
 
     private int accountID;
     private static int startingID = 100;
     private double accountBalance;
-    public enum AccountType{CHECKING, SAVINGS, INVESTMENT}
+    enum AccountType{CHECKING, SAVINGS, INVESTMENT}
     private AccountType accountType;
-    public enum AccountStatus{OPEN, CLOSED, OFAC}
+    enum AccountStatus{OPEN, CLOSED, OFAC}
     private AccountStatus accountStatus;
-    private boolean success = false;
     private final int customerID;
 
     private Account(int customerID, AccountType type, double amount){
@@ -25,11 +24,11 @@ public class Account {
     }
 
 
-    public final static Account createAccount(int customerID, AccountType type, double amount){
+     final static Account createAccount(int customerID, AccountType type, double amount){
         return new Account(customerID, type, amount);
     }
 
-    public AccountType getAccountType() {
+    AccountType getAccountType() {
         return accountType;
     }
 
@@ -37,26 +36,25 @@ public class Account {
         return accountStatus;
     }
 
-    public int getAccountID() {
+    int getAccountID() {
         return accountID;
     }
-    public int getCustomerID() {
+    int getCustomerID() {
         return customerID;
     }
 
-    public boolean depositToAccount(double amount){
+    boolean depositToAccount(double amount){
         accountBalance += amount;
-        success = true;
-        return success;
+        return true;
     }
-    public boolean withdrawalFromAccount(double amount){
+    boolean withdrawalFromAccount(double amount){
         accountBalance -= amount;
-        return success;
+        return true;
     }
-    public double getAccountBalance() {
+    double getAccountBalance() {
         return accountBalance;
     }
-    public void setStatus(AccountStatus status){
+    void setStatus(AccountStatus status){
         accountStatus = status;
     }
 }

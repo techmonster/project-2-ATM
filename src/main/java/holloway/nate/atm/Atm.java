@@ -7,22 +7,20 @@ import java.util.Scanner;
  * Created by nathanielholloway on 9/17/16.
  * This class will is a model of an ATM interface.
  */
-public class Atm {
-    BankEngine bankEngine;
-    Scanner scanner;
-    double doubleAnswer;
-    String stringAnswer;
-    int customerId;
-    ArrayList<Account> currentAccounts;
-    boolean quit = false;
-    boolean success = false;
+class Atm {
+    private BankEngine bankEngine;
+    private Scanner scanner;
+    private int customerId;
+    private ArrayList<Account> currentAccounts;
+    private boolean quit = false;
+    private boolean success = false;
 
-    public Atm(){
+    Atm(){
         bankEngine = new BankEngine();
         scanner = new Scanner(System.in);
     }
 
-    public void start(){
+    void start(){
         while(!quit) {
             Menu.printGreetingMenu();
             int intAnswer ;
@@ -31,7 +29,7 @@ public class Atm {
         }
     }
 
-    public void switchInitialResponse(int initAnswer){
+    private void switchInitialResponse(int initAnswer){
         switch (initAnswer){
             case 1:
                 createAnAccount();
@@ -47,7 +45,7 @@ public class Atm {
             }
     }
 
-    public void createAnAccount(){
+    private void createAnAccount(){
         Menu.printFirstNamePrompt();
         String firstName = scanner.next();
         Menu.printLastNamePrompt();
@@ -59,7 +57,8 @@ public class Atm {
         logIn();
     }
 
-    public void logIn(){
+    private void logIn(){
+        String stringAnswer;
         int count = 0;
         boolean noSuccess = true;
         while (noSuccess && count < 3) {
@@ -70,7 +69,7 @@ public class Atm {
 
             if (bankEngine.authenticate(customerId, stringAnswer)) {
                 noSuccess = false;
-                System.out.printf("WELCOME BACK %s %s%n", bankEngine.customerManager.getCustomerById(customerId).getFirstName(), bankEngine.customerManager.getCustomerById(customerId).getLastName());
+                System.out.printf("WELCOME BACK %s %s%n", bankEngine.getCustomerNameById(customerId), bankEngine.getCustomerNameById(customerId));
                 displayOptionMenu();
             } else {
                 Menu.cannotBeAuthenticatedMessage();
@@ -78,7 +77,7 @@ public class Atm {
             count++;
         }
     }
-    public void displayOptionMenu(){
+    private void displayOptionMenu(){
         displayCurrentAccounts();
         System.out.println();
         Menu.accountOptionMenu();
@@ -86,15 +85,15 @@ public class Atm {
         evaluateOptions(accountOptionAnswer);       //evaluate options method call
     }
     
-    public void displayCurrentAccounts(){
-        currentAccounts = bankEngine.getCustomerAccounts(bankEngine.customerManager.getCustomerById(customerId));
+    private void displayCurrentAccounts(){
+        currentAccounts = bankEngine.getCustomerAccounts(bankEngine.getCustomerById(customerId));
         System.out.println("You currently have these types of accounts: ");
         for (Account a:currentAccounts) {
             System.out.println(a.getAccountType().toString());
         }
     }
 
-    public void evaluateOptions(int i) {
+    private void evaluateOptions(int i) {
         Account one = null;
         Account two = null;
         Account.AccountType thisType;
@@ -187,7 +186,7 @@ public class Atm {
                 break;
         }
     }   
-        public Account.AccountType switchType(int selection){
+        private Account.AccountType switchType(int selection){
             int count = 0;
             Account.AccountType type = null;
             while(type == null && count < 3){

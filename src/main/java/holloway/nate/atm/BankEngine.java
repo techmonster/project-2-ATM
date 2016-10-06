@@ -6,35 +6,35 @@ import java.util.ArrayList;
  * Created by nathanielholloway on 9/18/16.
  * This class is where all of the classes meet.
  */
-public class BankEngine {
+final class BankEngine {
 
-    CustomerManager customerManager;
-    AccountManager accountManager;
-    TransactionManager transactionManager;
+    private CustomerManager customerManager;
+    private AccountManager accountManager;
+    private TransactionManager transactionManager;
 
-    public BankEngine(){
+    BankEngine(){
         customerManager = new CustomerManager();
         accountManager = new AccountManager();
         transactionManager = new TransactionManager();
     }
 
-    public Customer createNewCustomer(String firstName, String lastName, String pin){
+    Customer createNewCustomer(String firstName, String lastName, String pin){
         return customerManager.createNewCustomer(firstName,lastName,pin);
     }
 
-    public Account createNewAccount(int customerId, Account.AccountType type, double amount){
+    Account createNewAccount(int customerId, Account.AccountType type, double amount){
         return accountManager.createNewAccount(customerId, type, amount);
     }
 
-    public boolean withdrawal(int accountId, double amount){
+    boolean withdrawal(int accountId, double amount){
         return accountManager.withdrawal(accountId, amount);
     }
 
-    public boolean deposit(int accountId, double amount){
+    boolean deposit(int accountId, double amount){
         return accountManager.deposit(accountId, amount);
     }
 
-    public boolean transfer( Account account1, Account account2, double amount){
+    boolean transfer( Account account1, Account account2, double amount){
         if(account1.getCustomerID()==account2.getCustomerID()) {
             return accountManager.transfer(account1, account2, amount);
         } else {
@@ -43,11 +43,11 @@ public class BankEngine {
         }
     }
 
-    public double checkBalance(Account account){
+    double checkBalance(Account account){
         return accountManager.balanceInquiry(account.getAccountID());
     }
 
-    public boolean authenticate(int customerNumber, String pin){
+    boolean authenticate(int customerNumber, String pin){
 
         try{
             Customer thisCustomer = customerManager.getCustomerById(customerNumber);
@@ -63,11 +63,15 @@ public class BankEngine {
         return false;
     }
 
-    public Account getAccountByID(int id){
-        return accountManager.getAccountById(id);
+    Customer getCustomerById(int id){
+        return customerManager.getCustomerById(id);
     }
 
-    public void closeAccount(int customerID, Account.AccountType type){
+    String getCustomerNameById(int id){
+        return customerManager.getCustomerById(id).getFirstName() +" "+ customerManager.getCustomerById(id).getLastName();
+    }
+
+    void closeAccount(int customerID, Account.AccountType type){
         boolean result = false;
         ArrayList<Account> thisCustomersAccounts = getCustomerAccounts(customerManager.getCustomerById(customerID));
         for (Account a:thisCustomersAccounts) {
@@ -77,16 +81,16 @@ public class BankEngine {
         }
     }
 
-    public ArrayList<Account> getCustomerAccounts(Customer customer){
+    ArrayList<Account> getCustomerAccounts(Customer customer){
         return accountManager.getCustomerAccounts(customer.getCustomerID());
 
     }
 
-    public void printTransactions(){
+    void printTransactions(){
         transactionManager.printTransactions();
     }
 
-    public void createNewTransaction(double amount, Transaction.TransactionType type, boolean success) {
+    void createNewTransaction(double amount, Transaction.TransactionType type, boolean success) {
          transactionManager.createNewTransaction(amount,type,success);
     }
 

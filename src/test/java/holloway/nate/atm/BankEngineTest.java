@@ -5,6 +5,7 @@ import org.junit.Test;
 
 /**
  * Created by nathanielholloway on 9/18/16.
+ * This class was created to test the BankEngine.
  */
 public class BankEngineTest {
 
@@ -26,7 +27,7 @@ public class BankEngineTest {
     @Test
     public void depositTest(){
         BankEngine manager = new BankEngine();
-        Customer firstCustomer = manager.customerManager.createNewCustomer("Nate","Holloway","9999");
+        Customer firstCustomer = manager.createNewCustomer("Nate","Holloway","9999");
         Account firstAccount = manager.createNewAccount(firstCustomer.getCustomerID(), Account.AccountType.SAVINGS,10000);
         Account secondAccount = manager.createNewAccount(firstCustomer.getCustomerID(), Account.AccountType.CHECKING,500);
         boolean isTrue = manager.deposit(firstAccount.getAccountID(),500);

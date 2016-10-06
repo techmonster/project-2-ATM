@@ -5,6 +5,7 @@ import org.junit.Test;
 
 /**
  * Created by nathanielholloway on 9/18/16.
+ * This class was created to test the Transaction class.
  */
 public class TransactionsTest {
 
@@ -14,9 +15,5 @@ public class TransactionsTest {
         Assert.assertNotNull(firstTransaction);
     }
 
-    @Test
-    public void printTransactionTest(){
-        Transaction firstTransaction = Transaction.createTransaction(250, Transaction.TransactionType.DEPOSIT,true);
 
-    }
 }

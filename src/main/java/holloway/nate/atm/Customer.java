@@ -7,7 +7,7 @@ package holloway.nate.atm;
  */
 
 
-public class Customer {
+final class Customer {
 
     private static int startingId = 100000;
     private int customerID;
@@ -26,19 +26,19 @@ public class Customer {
         return customerID;
     }
 
-    public String getFirstName() {
+    String getFirstName() {
         return firstName;
     }
 
-    public String getLastName() {
+    String getLastName() {
         return lastName;
     }
 
-    public String getPin() {
+    String getPin() {
         return pin;
     }
 
-    public final static Customer createCustomer(String firstName, String lastName, String pin){
+    final static Customer createCustomer(String firstName, String lastName, String pin){
         return new Customer( firstName, lastName, pin);
     }
 

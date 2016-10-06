@@ -8,8 +8,7 @@ import java.util.ArrayList;
  * This class is responsible for communication with the customer class.
  * This class will create, store, and return customer objects.
  */
-
-public class CustomerManager {
+ class CustomerManager {
     private ArrayList<Customer> customers;
 
     CustomerManager(){
@@ -17,7 +16,7 @@ public class CustomerManager {
     }
 
 
-    public final Customer getCustomerById(int id){
+    final Customer getCustomerById(int id){
 
         for (Customer c: customers) {
             if (id == c.getCustomerID())
@@ -26,7 +25,7 @@ public class CustomerManager {
         return null;
     }
 
-    public String findPin(String pin){
+    String findPin(String pin){
         String success = "Failed to find pin.";
          for(Customer c: customers){
             if(c.getPin().equals(pin)){
@@ -36,11 +35,11 @@ public class CustomerManager {
         return success;
     }
 
-    public void addCustomer(Customer c){
+    private void addCustomer(Customer c){
         customers.add(c);
     }
 
-    public Customer createNewCustomer( String firstName, String lastName, String pin){
+    Customer createNewCustomer( String firstName, String lastName, String pin){
         Customer newCustomer = Customer.createCustomer(firstName, lastName, pin);
         addCustomer(newCustomer);
         return newCustomer;
